@@ -1,0 +1,23 @@
+{
+  "name": "new-icd-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IndoorCliffDiving/new-icd-website.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IndoorCliffDiving/new-icd-website/issues"
+  },
+  "homepage": "https://github.com/IndoorCliffDiving/new-icd-website#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "csv-parser": "^3.0.0"
+  }
+}
