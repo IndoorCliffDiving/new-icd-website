@@ -5,7 +5,7 @@ const path = require('path');
 
 const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT8wne1qGkFE0m-4QwHXPkRo_Tx4FHbsE8Fw7fMD-MCc_wKTVlKL6XkcB5-pifBW3o-wWKEOxCIIsAE/pub?gid=0&single=true&output=csv';
 const templateFile = path.resolve(__dirname, 'template.html');
-const outputFile = path.resolve(__dirname, 'static', 'index.html');
+const outputFile = path.resolve(__dirname, 'output', 'index.html');
 
 axios.get(csvUrl, { responseType: 'stream' })
     .then(response => {
