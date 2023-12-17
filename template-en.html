@@ -711,6 +711,21 @@
         <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="/js/jquery.magnific-popup.js"></script>
         <script type="text/javascript" src="/js/main.js"></script>
+        <script type="text/javascript">
+            $(window).on('load', function() {
+                var userLanguage;
+
+                if (document.documentElement.lang !== 'nl') {
+                    if (typeof navigator !== 'undefined') {
+                        userLanguage = navigator.language || navigator.userLanguage;
+                    }
+
+                    if (userLanguage && userLanguage.startsWith('nl')) {
+                        window.location.href = 'index.html';
+                    }
+                }
+            });
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
     </body>
 </html>
