@@ -1,5 +1,6 @@
 const axios = require('axios');
 const csv = require('csv-parser');
+const minify = require('html-minifier').minify;
 const { writeFileSync, readFileSync } = require('fs');
 const path = require('path');
 
@@ -40,7 +41,13 @@ axios.get(csvUrl, { responseType: 'stream' })
 
                 // Read the template file, replace the placeholder, and write back the content
                 let templateContent = readFileSync(templateFile, 'utf8');
-                let updatedContent = templateContent.replace('<!-- ICD_EVENT_TABLE_CONTENT -->', htmlTable);
+                let updatedContent = minify(templateContent.replace('<!-- ICD_EVENT_TABLE_CONTENT -->', htmlTable), {
+                    collapseWhitespace: true,
+                    conservativeCollapse: true,
+                    removeComments: true,
+                    minifyCSS: true,
+                    minifyJS: true,
+                });
                 writeFileSync(outputFile, updatedContent);
                 console.log(`Table content has been inserted into ${outputFile}`);
             });
