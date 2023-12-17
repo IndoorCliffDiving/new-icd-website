@@ -6,52 +6,59 @@ const path = require('path');
 
 const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT8wne1qGkFE0m-4QwHXPkRo_Tx4FHbsE8Fw7fMD-MCc_wKTVlKL6XkcB5-pifBW3o-wWKEOxCIIsAE/pub?gid=0&single=true&output=csv';
 const templateFile = path.resolve(__dirname, 'template.html');
+const templateFileEn = path.resolve(__dirname, 'template-en.html');
 const outputFile = path.resolve(__dirname, 'output', 'index.html');
+const outputFileEn = path.resolve(__dirname, 'output', 'en.html');
 
 axios.get(csvUrl, { responseType: 'stream' })
-    .then(response => {
-        let htmlTable = `
-      <table class="table agenda">
-        <thead>
-          <tr>
-            <th scope="col">Datum</th>
-            <th scope="col">Event</th>
-            <th scope="col">Locatie</th>
-          </tr>
-        </thead>
-        <tbody>
-    `;
-
-        response.data
-            .pipe(csv())
-            .on('data', (row) => {
-                htmlTable += `
-          <tr>
-            <td>${row.Date}</td>
-            <td>${row.Event}</td>
-            <td>${row.Location}</td>
-          </tr>
-        `;
-            })
-            .on('end', () => {
-                htmlTable += `
-          </tbody>
-        </table>
-        `;
-
-                // Read the template file, replace the placeholder, and write back the content
-                let templateContent = readFileSync(templateFile, 'utf8');
-                let updatedContent = minify(templateContent.replace('<!-- ICD_EVENT_TABLE_CONTENT -->', htmlTable), {
-                    collapseWhitespace: true,
-                    conservativeCollapse: true,
-                    removeComments: true,
-                    minifyCSS: true,
-                    minifyJS: true,
-                });
-                writeFileSync(outputFile, updatedContent);
-                console.log(`Table content has been inserted into ${outputFile}`);
-            });
+    .then((response) => {
+        generateHTML(response.data, templateFile, outputFile);
+        generateHTML(response.data, templateFileEn, outputFileEn);
     })
     .catch(error => {
         console.error('Error downloading or processing the CSV file:', error);
     });
+
+function generateHTML(data, templateFile, outputFile) {
+    let htmlTable = `
+  <table class="table agenda">
+    <thead>
+      <tr>
+        <th scope="col">Datum</th>
+        <th scope="col">Event</th>
+        <th scope="col">Locatie</th>
+      </tr>
+    </thead>
+    <tbody>
+`;
+
+    data
+        .pipe(csv())
+        .on('data', (row) => {
+            htmlTable += `
+      <tr>
+        <td>${row.Date}</td>
+        <td>${row.Event}</td>
+        <td>${row.Location}</td>
+      </tr>
+    `;
+        })
+        .on('end', () => {
+            htmlTable += `
+      </tbody>
+    </table>
+    `;
+
+            // Read the template file, replace the placeholder, and write back the content
+            let templateContent = readFileSync(templateFile, 'utf8');
+            let updatedContent = minify(templateContent.replace('<!-- ICD_EVENT_TABLE_CONTENT -->', htmlTable), {
+                collapseWhitespace: true,
+                conservativeCollapse: true,
+                removeComments: true,
+                minifyCSS: true,
+                minifyJS: true,
+            });
+            writeFileSync(outputFile, updatedContent);
+            console.log(`Table content has been inserted into ${outputFile}`);
+        });
+}
