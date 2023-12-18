@@ -560,7 +560,7 @@
                             </div>
                             <div class="team-content">
                                 <h3>Mitra Wong Sokhandani</h3>
-                                <span>Coach</span>
+                                <span>Trainer</span>
                             </div>
                         </div>
                     </div>
@@ -733,6 +733,21 @@
         <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="/js/jquery.magnific-popup.js"></script>
         <script type="text/javascript" src="/js/main.js"></script>
+        <script type="text/javascript">
+            $(window).on('load', function() {
+                var userLanguage;
+
+                if (document.documentElement.lang !== 'en') {
+                    if (typeof navigator !== 'undefined') {
+                        userLanguage = navigator.language || navigator.userLanguage;
+                    }
+
+                    if (userLanguage && userLanguage.startsWith('en')) {
+                        window.location.href = 'en.html';
+                    }
+                }
+            });
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
     </body>
 </html>

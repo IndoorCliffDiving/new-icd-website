@@ -444,7 +444,7 @@
                             </div>
                             <div class="team-content">
                                 <h3>Ken-Rick Leeflang</h3>
-                                <span>Hoofd coach</span>
+                                <span>Head coach</span>
                             </div>
                         </div>
                     </div>
@@ -518,7 +518,7 @@
                             </div>
                             <div class="team-content">
                                 <h3>Anke Muijzers</h3>
-                                <span>Schoonspring specialist</span>
+                                <span>Diving specialist</span>
                             </div>
                         </div>
                     </div>
@@ -538,7 +538,7 @@
                             </div>
                             <div class="team-content">
                                 <h3>Mitra Wong Sokhandani</h3>
-                                <span>Coach</span>
+                                <span>Trainer</span>
                             </div>
                         </div>
                     </div>
@@ -711,6 +711,21 @@
         <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="/js/jquery.magnific-popup.js"></script>
         <script type="text/javascript" src="/js/main.js"></script>
+        <script type="text/javascript">
+            $(window).on('load', function() {
+                var userLanguage;
+
+                if (document.documentElement.lang !== 'nl') {
+                    if (typeof navigator !== 'undefined') {
+                        userLanguage = navigator.language || navigator.userLanguage;
+                    }
+
+                    if (userLanguage && userLanguage.startsWith('nl')) {
+                        window.location.href = 'index.html';
+                    }
+                }
+            });
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
     </body>
 </html>
