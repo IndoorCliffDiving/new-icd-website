@@ -3,20 +3,9 @@
 
 	///////////////////////////
 	// Preloader
-	// $(window).on('load', function() {
-	// 	// $("#preloader").delay(600).fadeOut();
-	// 	var userLanguage;
-	//
-	// 	if (document.documentElement.lang !== 'en') {
-	// 		if (typeof navigator !== 'undefined') {
-	// 			userLanguage = navigator.language || navigator.userLanguage;
-	// 		}
-	//
-	// 		if (userLanguage && userLanguage.startsWith('en')) {
-	// 			window.location.href = 'en.html';
-	// 		}
-	// 	}
-	// });
+	$(window).on('load', function() {
+		$("#preloader").delay(600).fadeOut();
+	});
 
 	///////////////////////////
 	// Scrollspy
