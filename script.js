@@ -10,44 +10,48 @@ const templateFileEn = path.resolve(__dirname, 'template-en.html');
 const outputFile = path.resolve(__dirname, 'output', 'index.html');
 const outputFileEn = path.resolve(__dirname, 'output', 'en.html');
 
-axios.get(csvUrl, { responseType: 'stream' })
-    .then((response) => {
+(async () => {
+    try {
+        const response = await axios.get(csvUrl, { responseType: 'stream' });
         generateHTML(response.data, templateFile, outputFile);
         generateHTML(response.data, templateFileEn, outputFileEn);
-    })
-    .catch(error => {
+    } catch (error) {
         console.error('Error downloading or processing the CSV file:', error);
-    });
+    }
+})();
 
 function generateHTML(data, templateFile, outputFile) {
     let htmlTable = `
-  <table class="table agenda">
-    <thead>
-      <tr>
-        <th scope="col">Datum</th>
-        <th scope="col">Event</th>
-        <th scope="col">Locatie</th>
-      </tr>
-    </thead>
-    <tbody>
-`;
+    <table class="table agenda">
+      <thead>
+        <tr>
+          <th scope="col">Datum</th>
+          <th scope="col">Event</th>
+          <th scope="col">Locatie</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
 
     data
         .pipe(csv())
         .on('data', (row) => {
-            htmlTable += `
-      <tr>
-        <td>${row.Date}</td>
-        <td>${row.Event}</td>
-        <td>${row.Location}</td>
-      </tr>
-    `;
+            // Filter out rows with any empty values
+            if (row.Date && row.Event && row.Location) {
+                htmlTable += `
+        <tr>
+          <td>${row.Date}</td>
+          <td>${row.Event}</td>
+          <td>${row.Location}</td>
+        </tr>
+        `;
+            }
         })
         .on('end', () => {
             htmlTable += `
-      </tbody>
-    </table>
-    `;
+        </tbody>
+      </table>
+      `;
 
             // Read the template file, replace the placeholder, and write back the content
             let templateContent = readFileSync(templateFile, 'utf8');
