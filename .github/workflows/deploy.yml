@@ -17,13 +17,14 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.1.7
         with:
           persist-credentials: false
           lfs: true
+          ref: main
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.0
+        uses: actions/setup-node@v4.0.4
         with:
           node-version: '20'
 
@@ -33,14 +34,14 @@ jobs:
           npm run build
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v5.0.1
         with:
           commit_message: "Automated update based on the latest build"
           branch: main
           file_pattern: "output/**"
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
