@@ -19,7 +19,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.7
         with:
-          persist-credentials: false
           lfs: true
           ref: main
 
@@ -37,12 +36,10 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5.0.1
         with:
           commit_message: "Automated update based on the latest build"
-          commit_author_email: "john.doe@example.com"
-          commit_author_name: "John Doe"
           branch: main
           file_pattern: "output/**"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.6.4
