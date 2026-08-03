@@ -1799,3 +1799,73 @@ header {
 display: flex;
 flex-direction: column;
 }
+/* -- FAQ accordion -- */
+
+.faq-item {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 15px 0px;
+}
+
+.faq-item > summary {
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    position: relative;
+    padding-right: 30px;
+}
+
+.faq-item > summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item > summary h3 {
+    display: inline;
+    font-size: 16px;
+    font-weight: 700;
+    color: #10161A;
+}
+
+.faq-item > summary:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #6195FF;
+    transition: 0.2s transform;
+}
+
+.faq-item[open] > summary:after {
+    transform: rotate(180deg);
+}
+
+.faq-item > p {
+    margin: 12px 0px 0px;
+    color: #868F9B;
+}
+
+/* -- language switcher -- */
+
+.footer-lang {
+    margin-bottom: 15px;
+    color: #868F9B;
+}
+
+.footer-lang a {
+    color: #868F9B;
+}
+
+.footer-lang a:hover, .footer-lang a[aria-current="page"] {
+    color: #6195FF;
+}
+
+/* The nav gained a FAQ entry and a language switch; tighten spacing so the
+   full list still fits on one line at the smaller desktop breakpoint. */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .main-nav li {
+        padding: 0px 8px;
+    }
+    .main-nav li a {
+        font-size: 13px;
+    }
+}
