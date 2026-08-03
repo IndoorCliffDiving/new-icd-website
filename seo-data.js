@@ -41,8 +41,8 @@ const BUSINESS = {
     image: abs('/img/thumbnail_2.jpg'),
     imageWidth: 1067,
     imageHeight: 600,
-    bookingUrl: 'https://indoorcliffdiving.trainin.app/company/schedule',
-    shopUrl: 'https://indoorcliffdiving.trainin.app/company/shop',
+    bookingUrl: 'https://indoorcliffdiving.trainin.app/schedule',
+    shopUrl: 'https://indoorcliffdiving.trainin.app/shop',
     scheduleUrl: 'https://indoorcliffdiving.trainin.app/schedule',
     sameAs: [
         'https://www.facebook.com/indoorcliffdiving/',
