@@ -2,6 +2,7 @@ const axios = require('axios');
 const csv = require('csv-parser');
 const minify = require('html-minifier').minify;
 const { writeFileSync, readFileSync } = require('fs');
+const { createHash } = require('crypto');
 const path = require('path');
 const { Readable } = require('stream');
 
@@ -421,11 +422,45 @@ function readCsvRows(csvText) {
     });
 }
 
+const assetVersions = new Map();
+
+/**
+ * Appends a content hash to the local /css and /js references.
+ *
+ * Those files sit behind a CDN that serves them with a long max-age under a
+ * filename that never changes, so an edited stylesheet can keep being answered
+ * from a stale cache entry for a long time after it was deployed — the page
+ * then renders with the old CSS and looks broken. Hashing the URL makes every
+ * content change a new URL, which no cache can have an old copy of.
+ */
+function assetVersion(urlPath) {
+    if (!assetVersions.has(urlPath)) {
+        let version = '';
+        try {
+            const contents = readFileSync(path.resolve(outputDir, urlPath.replace(/^\//, '')));
+            version = createHash('sha1').update(contents).digest('hex').slice(0, 8);
+        } catch (error) {
+            // An unresolvable path is left alone rather than versioned wrongly.
+            console.warn(`No cache-busting for ${urlPath}: ${error.code || error.message}`);
+        }
+        assetVersions.set(urlPath, version);
+    }
+
+    return assetVersions.get(urlPath);
+}
+
+function versionAssets(html) {
+    return html.replace(/(?:href|src)="(\/(?:css|js)\/[^"?]+)"/g, (tag, urlPath) => {
+        const version = assetVersion(urlPath);
+        return version ? tag.replace(urlPath, `${urlPath}?v=${version}`) : tag;
+    });
+}
+
 function generateHTML(rows, { lang, template, output }) {
-    const templateContent = readFileSync(template, 'utf8')
+    const templateContent = versionAssets(readFileSync(template, 'utf8')
         .replace('<!-- ICD_EVENT_TABLE_CONTENT -->', buildAgendaTable(rows, lang))
         .replace('<!-- ICD_FAQ_CONTENT -->', buildFaqSection(lang))
-        .replace('<!-- ICD_STRUCTURED_DATA -->', buildStructuredData(rows, lang));
+        .replace('<!-- ICD_STRUCTURED_DATA -->', buildStructuredData(rows, lang)));
 
     writeFileSync(output, minify(templateContent, {
         collapseWhitespace: true,
