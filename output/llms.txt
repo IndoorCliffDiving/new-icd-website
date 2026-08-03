@@ -2,7 +2,7 @@
 
 > Indoor Cliff Diving is a sports club in Amsterdam offering cliff diving, high diving, X-diving and freestyle diving in the diving tower pool at Sloterparkbad, with training for all levels from 0 to 10 metres. Training runs year-round at Sloterparkbad in Amsterdam Nieuw-West, with Skill Classes led by a trainer and Open Trainings for independent practice. Sessions start at €15 and no prior experience is required.
 
-Indoor Cliff Diving is a sports club, not a shop. The live class schedule, reservations and ticket sales are all handled by an external system at https://indoorcliffdiving.trainin.app/company/schedule. The website itself is a single informational page published in Dutch and English.
+Indoor Cliff Diving is a sports club, not a shop. The live class schedule, reservations and ticket sales are all handled by an external system at https://indoorcliffdiving.trainin.app/schedule. The website itself is a single informational page published in Dutch and English.
 
 - Address: Optisport Sloterparkbad, President Allendelaan 3, 1064 GW Amsterdam, Netherlands
 - Coordinates: 52.3697, 4.8178
@@ -18,8 +18,8 @@ Indoor Cliff Diving is a sports club, not a shop. The live class schedule, reser
 
 ## Booking and schedule
 
-- [Book a session](https://indoorcliffdiving.trainin.app/company/schedule): Live class schedule and reservations.
-- [Buy tickets and memberships](https://indoorcliffdiving.trainin.app/company/shop): Single entries, packages, monthly and season passes.
+- [Book a session](https://indoorcliffdiving.trainin.app/schedule): Live class schedule and reservations.
+- [Buy tickets and memberships](https://indoorcliffdiving.trainin.app/shop): Single entries, packages, monthly and season passes.
 - [Class timetable](https://indoorcliffdiving.trainin.app/schedule): Skill Classes and Open Trainings.
 
 ## Optional
