@@ -2,7 +2,7 @@
 
 > Indoor Cliff Diving is a sports club in Amsterdam offering cliff diving, high diving, X-diving and freestyle diving in the diving tower pool at Sloterparkbad, with training for all levels from 0 to 10 metres.
 
-Last generated: 2026-08-16
+Last generated: 2026-08-17
 Canonical pages: https://www.indoorcliffdiving.com/ (Dutch) and https://www.indoorcliffdiving.com/en.html (English)
 
 ## Contact and location
@@ -47,19 +47,19 @@ Tickets and memberships are bought at https://indoorcliffdiving.trainin.app/shop
 
 ## Event calendar
 
-- 19 t/m 21 december — Amsterdam High Diving Cup (Sloterparkbad Amsterdam)
-- 6 t/m 8 maart — NK Masters (Tongelreep Eindhoven)
-- 26 t/m 29 maart — AmsterJam (Amsterdam)
-- mei — Malta Pro Cliff Diving Trip (Malta)
-- 12 t/m 14 juni — NK schoonspringen en High Diving (Amerena Amersfoort)
-- 28 juni — Club Championships (Sloterparkbad Amsterdam)
-- 2 t/m 6 juli — MadNes Festival (Ameland)
-- 10 t/m 12 juli — Maribor High Diving Cup (Maribor Slovenië)
-- 12 t/m 16 juli — ICD Trainingcamp (Area47)
-- 16 t/m 19 juli — International Cliff Diving Championship (Ponte Brolla)
-- juli / augustus — EK High Diving (Parijs Frankrijk)
-- ??? — Ken's trip (Marocco, Kanal of High Jump)
-- 16 t/m 20 september — Infinite Drop Kreta Cup (Agios Nikolaos Griekeland)
+- 5 t/m 6 September  — Techniek & Clean Diving Trainingskamp (Aachen, Duitsland )
+- 18 t/m 22 September  — Cliff Diving Trip (Ibiza)
+- 12 t/m 16 November — Amsterdam High Diving Cup (Sloterparkbad Amsterdam)
+- Q1 2027 — Maarten’s Wintersport Trip (Datum & locatie volgt)
+- Jan/Feb — Techniek & Clean Diving Trainingskamp (Aachen, Duitsland )
+- 5 t/m 7 Maart  — NK Masters Diving Cup (Tongelreep Eindhoven)
+- 18 t/m  21 Maart  — AmsterJam  (Sloterparkbad Amsterdam)
+- Mei — Malta Pro Cliff Diving Trip (Malta)
+- 2 t/m 4 Juli — MadNes Festival (Ameland)
+- Juli — International Cliff Diving Championship (Ponte Brolla)
+- Q3 2027 — 10 Years ICD Trip (Kroatië)
+- ??? — Ken's trip (Marocco)
+- 5 t/m 8 Augustus — High Jump Festival (Tsjechië)
 
 ## Frequently asked questions
 
