@@ -1,0 +1,74 @@
+# robots.txt for indoorcliffdiving.com
+#
+# This is a public marketing site for a sports club: everything on it is meant
+# to be found, quoted and acted on. Search crawlers, AI answer engines and
+# user-triggered assistants are all allowed in full.
+
+User-agent: *
+Allow: /
+
+# --- AI search and answer engines -------------------------------------------
+# These fetch pages to cite them in live answers. Blocking any of them would
+# remove the club from AI search results, so they are explicitly welcomed.
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# --- Machine-readable entry points ------------------------------------------
+# /llms.txt is a short index; /llms-full.txt carries the whole site as text.
+
+Sitemap: https://www.indoorcliffdiving.com/sitemap.xml
