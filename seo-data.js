@@ -106,7 +106,7 @@ const FAQ = {
         },
         {
             q: 'Wat zijn de trainingstijden?',
-            a: 'In het Sloterparkbad wordt getraind op donderdag van 21.00 tot 22.00 uur en op zondag van 14.30 tot 15.30 uur (Kids Skill Class) en 15.30 tot 17.30 uur. Bij Turnz zijn er open trainingen op dinsdag 20.30–22.30, vrijdag 19.30–21.00 en zondag 18.00–21.00 uur.',
+            a: 'In het Sloterparkbad wordt getraind op donderdag van 21.00 tot 22.00 uur (16 jaar en ouder) en op zondag van 14.30 tot 15.30 uur (Kids Skill Class, 16 jaar en jonger) en 15.30 tot 17.30 uur (14 jaar en ouder). Bij Turnz zijn er open trainingen op dinsdag 20.30–22.30, vrijdag 19.30–21.00 en zondag 18.00–21.00 uur.',
         },
         {
             q: 'Heb ik ervaring nodig om mee te doen?',
@@ -122,7 +122,7 @@ const FAQ = {
         },
         {
             q: 'Kunnen kinderen meedoen?',
-            a: 'Ja. Op zondag van 14.30 tot 15.30 uur is er een Kids Skill Class waarin kinderen onder begeleiding van een trainer leren springen en duiken. Voor jongeren geldt een aangepast tarief van €8 per entree.',
+            a: 'Ja. Op zondag van 14.30 tot 15.30 uur is er een Kids Skill Class voor kinderen van 16 jaar en jonger waarin zij onder begeleiding van een trainer leren springen en duiken. Voor jongeren geldt een aangepast tarief van €8 per entree.',
         },
         {
             q: 'Hoe meld ik me aan voor een training?',
@@ -144,7 +144,7 @@ const FAQ = {
         },
         {
             q: 'What are the training times?',
-            a: 'At Sloterparkbad the club trains on Thursday from 21.00 to 22.00 and on Sunday from 14.30 to 15.30 (Kids Skill Class) and 15.30 to 17.30. At Turnz there are open training sessions on Tuesday 20.30–22.30, Friday 19.30–21.00 and Sunday 18.00–21.00.',
+            a: 'At Sloterparkbad the club trains on Thursday from 21.00 to 22.00 (16 years and older) and on Sunday from 14.30 to 15.30 (Kids Skill Class, 16 years and younger) and 15.30 to 17.30 (14 years and older). At Turnz there are open training sessions on Tuesday 20.30–22.30, Friday 19.30–21.00 and Sunday 18.00–21.00.',
         },
         {
             q: 'Do I need experience to join?',
@@ -160,7 +160,7 @@ const FAQ = {
         },
         {
             q: 'Can children join?',
-            a: 'Yes. There is a Kids Skill Class every Sunday from 14.30 to 15.30 where children learn to jump and dive under a trainer\'s supervision. Youth members pay a reduced rate of €8 per entry.',
+            a: 'Yes. There is a Kids Skill Class every Sunday from 14.30 to 15.30 for children aged 16 years and younger, where they learn to jump and dive under a trainer\'s supervision. Youth members pay a reduced rate of €8 per entry.',
         },
         {
             q: 'How do I sign up for a training session?',
