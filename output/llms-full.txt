@@ -2,7 +2,7 @@
 
 > Indoor Cliff Diving is a sports club in Amsterdam offering cliff diving, high diving, X-diving and freestyle diving in the diving tower pool at Sloterparkbad, with training for all levels from 0 to 10 metres.
 
-Last generated: 2026-11-01
+Last generated: 2026-11-03
 Canonical pages: https://www.indoorcliffdiving.com/ (Dutch) and https://www.indoorcliffdiving.com/en.html (English)
 
 ## Contact and location
@@ -18,8 +18,8 @@ Canonical pages: https://www.indoorcliffdiving.com/ (Dutch) and https://www.indo
 
 At Sloterparkbad (President Allendelaan 3, Amsterdam):
 - Thursday 21.00–22.00 — Skill Class and Open Training — 16 years and older
-- Sunday 14.30–15.30 — Kids Skill Class — 16 years and younger
-- Sunday 15.30–17.30 — Skill Class and Open Training — 14 years and older
+- Sunday 14.30–16.30 — Kids Skill Class — 16 years and younger
+- Sunday 15.30–17.30 — Skill Class and Open Training — 16 years and older
 
 At the Turnz gymnastics hall, Amsterdam:
 - Tuesday 20.30–22.30 — Open Training
@@ -74,7 +74,7 @@ Training takes place at Optisport Sloterparkbad, President Allendelaan 3, 1064 G
 
 ### What are the training times?
 
-At Sloterparkbad the club trains on Thursday from 21.00 to 22.00 (16 years and older) and on Sunday from 14.30 to 15.30 (Kids Skill Class, 16 years and younger) and 15.30 to 17.30 (14 years and older). At Turnz there are open training sessions on Tuesday 20.30–22.30, Friday 19.30–21.00 and Sunday 18.00–21.00.
+At Sloterparkbad the club trains on Thursday from 21.00 to 22.00 (16 years and older) and on Sunday from 14.30 to 16.30 (Kids Skill Class, 16 years and younger) and 15.30 to 17.30 (16 years and older). At Turnz there are open training sessions on Tuesday 20.30–22.30, Friday 19.30–21.00 and Sunday 18.00–21.00.
 
 ### Do I need experience to join?
 
@@ -90,7 +90,7 @@ A trial lesson costs €15 and a youth ticket €8. A trial package of 5 entries
 
 ### Can children join?
 
-Yes. There is a Kids Skill Class every Sunday from 14.30 to 15.30 for children aged 16 years and younger, where they learn to jump and dive under a trainer's supervision. Youth members pay a reduced rate of €8 per entry.
+Yes. There is a Kids Skill Class every Sunday from 14.30 to 16.30 for children aged 16 years and younger, where they learn to jump and dive under a trainer's supervision. Youth members pay a reduced rate of €8 per entry.
 
 ### How do I sign up for a training session?
 

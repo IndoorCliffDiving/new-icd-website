@@ -376,8 +376,8 @@ Canonical pages: ${SITE_URL}/ (Dutch) and ${abs(PAGES.en.path)} (English)
 
 At Sloterparkbad (${BUSINESS.address.street}, ${BUSINESS.address.city}):
 - Thursday 21.00–22.00 — Skill Class and Open Training — 16 years and older
-- Sunday 14.30–15.30 — Kids Skill Class — 16 years and younger
-- Sunday 15.30–17.30 — Skill Class and Open Training — 14 years and older
+- Sunday 14.30–16.30 — Kids Skill Class — 16 years and younger
+- Sunday 15.30–17.30 — Skill Class and Open Training — 16 years and older
 
 At the Turnz gymnastics hall, Amsterdam:
 - Tuesday 20.30–22.30 — Open Training
