@@ -1,0 +1,29 @@
+# Indoor Cliff Diving
+
+> Indoor Cliff Diving is a sports club in Amsterdam offering cliff diving, high diving, X-diving and freestyle diving in the diving tower pool at Sloterparkbad, with training for all levels from 0 to 10 metres. Training runs year-round at Sloterparkbad in Amsterdam Nieuw-West, with Skill Classes led by a trainer and Open Trainings for independent practice. Sessions start at €15 and no prior experience is required.
+
+Indoor Cliff Diving is a sports club, not a shop. The live class schedule, reservations and ticket sales are all handled by an external system at https://indoorcliffdiving.trainin.app/schedule. The website itself is a single informational page published in Dutch and English.
+
+- Address: Optisport Sloterparkbad, President Allendelaan 3, 1064 GW Amsterdam, Netherlands
+- Coordinates: 52.3697, 4.8178
+- Email: indoorcliffdiving@gmail.com
+- Phone: +31627126225
+- Founded: 2017
+
+## Pages
+
+- [Indoor Cliff Diving (Dutch)](https://www.indoorcliffdiving.com/): Full site in Dutch — training times, services, event calendar, prices, team, contact details and FAQ.
+- [Indoor Cliff Diving (English)](https://www.indoorcliffdiving.com/en.html): The same content in English.
+- [Full site content as text](https://www.indoorcliffdiving.com/llms-full.txt): Every fact on the site — schedule, prices, services, FAQ and the current event calendar — as plain text.
+
+## Booking and schedule
+
+- [Book a session](https://indoorcliffdiving.trainin.app/schedule): Live class schedule and reservations.
+- [Buy tickets and memberships](https://indoorcliffdiving.trainin.app/shop): Single entries, packages, monthly and season passes.
+- [Class timetable](https://indoorcliffdiving.trainin.app/schedule): Skill Classes and Open Trainings.
+
+## Optional
+
+- [Facebook](https://www.facebook.com/indoorcliffdiving/): Announcements and photos.
+- [Instagram](https://www.instagram.com/indoorcliffdiving/): Photos and video from training and competitions.
+- [Liability waiver (PDF, Dutch)](https://www.indoorcliffdiving.com/docs/Eigen%20risico%20verklaring%20ICD.pdf): Own-risk declaration signed by participants.
